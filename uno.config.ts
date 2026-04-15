@@ -1,10 +1,8 @@
-import presetUno from "@unocss/preset-uno";
 import type { UserConfig } from "@unocss/core";
-import presetAttributify from "@unocss/preset-attributify";
-import { defineConfig } from "unocss";
+import { defineConfig, presetWind4, presetAttributify } from "unocss";
 
 const uno_config: UserConfig = {
-  presets: [presetUno(), presetAttributify()],
+  presets: [presetWind4(), presetAttributify()],
 };
 
 export default defineConfig(uno_config);

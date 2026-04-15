@@ -5,5 +5,7 @@ import babel from "@rolldown/plugin-babel";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), babel({ presets: [reactCompilerPreset()] }), UnoCSS()],
+  // Note: `UnoCSS()` must be before the `reactCompilerPreset`. If it comes
+  // after, attributify does not work.
+  plugins: [react(), UnoCSS(), babel({ presets: [reactCompilerPreset()] })],
 });

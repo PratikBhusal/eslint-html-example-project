@@ -7,10 +7,13 @@
     <title>unoss-eslint-html-bug-example</title>
   </head>
   <body>
-    <div id="root"></div>
+    <script type="module" charset="utf-8">
+      import "virtual:uno.css";
+    </script>
     <p className="text-green bg-black bg-red-400">
       Hello World from index.html
     </p>
+    <div id="root"></div>
     <div className="mx1 m1 mr-1">Testing</div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
